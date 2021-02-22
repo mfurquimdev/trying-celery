@@ -1,10 +1,11 @@
+#!/usr/bin/env python
+
 from tasks import add
 
-result = add.delay(1,1)
+import random
 
+num = list(range(1,11))
 
-try:
-    result.get(timeout=1)
-except TimeoutError:
-    result.traceback
+for i in range(1):
+    add.delay(random.choice(num),random.choice(num))
 
