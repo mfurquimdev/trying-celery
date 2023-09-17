@@ -63,7 +63,7 @@ task_acks_on_failure_or_timeout = False
 # task will execute again by the same worker, or another worker.
 # Warning: Enabling this can cause message loops; make sure you know what you’re doing.
 # TODO: Uncoment to test
-task_reject_on_worker_lost = True
+#task_reject_on_worker_lost = True
 
 #Celery broker connection configs
 broker_connection_timeout = 10
